@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Cash Flow Audit - Optimize Your Business</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            text-align: center;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #b0b0b0;
+            margin-bottom: 25px;
+        }
+        .email-form {
+            margin-top: 20px;
+        }
+        input[type="email"] {
+            padding: 12px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #444;
+            background: #262626;
+            color: #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        input[type="email"]::placeholder {
+            color: #888;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #28a745;
+            box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+        }
+        button {
+            padding: 12px 24px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .success-message {
+            display: none;
+            color: #28a745;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get a Free Cash Flow Audit</h1>
+        <p>Struggling with cash flow? We'll analyze your business finances and provide actionable insights to improve your cash flow – for free.</p>
+        
+        <!-- Netlify Form -->
+        <form name="cash-flow-audit" method="POST" data-netlify="true" action="/thank-you">
+            <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit">Get My Free Audit</button>
+        </form>
+        
+        <p>Your information is safe with us. No spam, just expert financial advice.</p>
+    </div>
+</body>
+</html>
