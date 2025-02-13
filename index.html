@@ -78,8 +78,17 @@
         <h1>Get a Free Cash Flow Audit</h1>
         <p>Struggling with cash flow? We'll analyze your business finances and provide actionable insights to improve your cash flow – for free.</p>
         
-        <!-- Netlify Form -->
-        <form name="cash-flow-audit" method="POST" data-netlify="true" action="/thank-you">
+        <!-- Netlify Form with proper redirect -->
+        <form 
+            name="cash-flow-audit" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            action="/thank-you">
+            <input type="hidden" name="form-name" value="cash-flow-audit">
+            <div hidden>
+                <input name="bot-field">
+            </div>
             <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
             <button type="submit">Get My Free Audit</button>
         </form>
